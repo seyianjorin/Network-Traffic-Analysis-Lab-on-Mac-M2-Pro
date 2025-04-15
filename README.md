@@ -37,4 +37,5 @@ Network-Traffic-Analysis-Lab-on-Mac-M2-Pro/
 │   ├── python script created for automated log sanitization and fetching
 │   └── Ubuntu VM running on UTM
 ├── README.m # This file
-├── final_conn_2025-04-15_03-50-06.log # Redacted connection log
+├── Sanitize_and_fetch.py # automation script to fetch the latest conn.log file and sanitize it by redacting IP address and other unwanted data. 
+├── final_conn.log # Redacted connection log
