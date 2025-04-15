@@ -1,47 +1,40 @@
-# Network Traffic Analysis Lab on Mac M2 Pro
- 
-
 # 🛡️ Zeek Network Monitoring Lab
 
 ## 💡 Overview
-This lab demonstrates real-time network traffic monitoring and threat detection using [Zeek](https://zeek.org/), running inside a bridged Ubuntu Server VM on macOS. It's designed to simulate real-world SOC analyst workflows and lays the foundation for more advanced projects in cloud, automation, and AI-powered security.
+
+This project demonstrates real-time network traffic monitoring and threat detection using [Zeek](https://zeek.org/) on an Ubuntu Server VM, bridged into a live network using UTM on macOS. The goal is to simulate an enterprise-level Security Operations Center (SOC) detection workflow, while building foundational skills for a future career in cybersecurity, cloud security, automation, and AI-based threat detection.
 
 ---
 
-## 🔧 Environment
+## 🧰 Environment Setup
 
-- Host: macOS M2 Pro (2022)
-- Virtualization: UTM + Ubuntu Server 24.04
-- Zeek Version: 7.2.0-dev.510
-- Devices: Raspberry Pi 4, iPhone, MacBook
-
----
-
-## 🚀 What I Did
-
-| Task | Description |
-|------|-------------|
-| VM Setup | Created and configured Ubuntu server with network bridging |
-| Zeek Install | Installed and ran Zeek from source |
-| Live Capture | Captured and analyzed real network traffic |
-| Nmap Simulation | Simulated an attacker using `nmap -sS` and observed detection in `conn.log` |
-| DNS Monitoring | Observed DNS logs including queries from iPhone and local devices |
+- **Host Machine:** MacBook Pro (M2, 2022)
+- **Virtualization:** [UTM](https://mac.getutm.app/) running Ubuntu Server 24.04 LTS
+- **Monitoring Tool:** Zeek IDS (compiled from source)
+- **Network Mode:** Bridged to host Wi-Fi (ensures VM is on the same subnet as physical devices)
+- **Client Devices:** Raspberry Pi 4, MacBook Pro, iPhone
 
 ---
 
-## 🔍 Key Logs
+## 📡 Simulated Traffic & Detection Scenarios
 
-- `conn.log`: Captured SYN scan attempts with `REJ` state
-- `dns.log`: Passive DNS visibility showing iPhone lookups
-- `packet_filter.log`: Confirmed Zeek’s filtering behavior
-- `notice.log`: Placeholder for future detection scripting
+| Simulation | Description |
+|------------|-------------|
+| `nmap` Port Scan | Ran SYN scan from MacBook to VM using `nmap -sS` |
+| iPhone Traffic | Captured multicast DNS & Bonjour lookups from iPhone |
+| Live DNS Queries | Detected passive DNS activity across devices |
+| ICMP Echo | Verified network visibility using `ping` from/to Raspberry Pi |
+| Zeek Live Capture | Monitored real-time traffic on `enp0s1` interface via `sudo zeek -i enp0s1` |
 
 ---
 
-## 📚 Skills Practiced
+## 📂 Project Contents
 
-- Linux + Terminal workflow
-- Network configuration & subnet logic
-- Log analysis & threat detection
-- PCAP & packet-level understanding
-- IDS fundamentals with Zeek
+```bash
+Network-Traffic-Analysis-Lab-on-Mac-M2-Pro/
+├── screenshots/
+│   ├── Nmap port scan via terminal
+│   ├── python script created for automated log sanitization and fetching
+│   └── Ubuntu VM running on UTM
+├── README.m # This file
+├── final_conn_2025-04-15_03-50-06.log # Redacted connection log
