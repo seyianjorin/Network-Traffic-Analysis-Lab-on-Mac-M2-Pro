@@ -1,12 +1,12 @@
-# 🛡️ Zeek Network Monitoring Lab
+# Zeek Network Monitoring Lab
 
-## 💡 Overview
+## Overview
 
 This project demonstrates real-time network traffic monitoring and threat detection using [Zeek](https://zeek.org/) on an Ubuntu Server VM, bridged into a live network using UTM on macOS. The goal is to simulate an enterprise-level Security Operations Center (SOC) detection workflow, while building foundational skills for a future career in cybersecurity, cloud security, automation, and AI-based threat detection.
 
 ---
 
-## 🧰 Environment Setup
+##  Environment Setup
 
 - **Host Machine:** MacBook Pro (M2, 2022)
 - **Virtualization:** [UTM](https://mac.getutm.app/) running Ubuntu Server 24.04 LTS
@@ -16,7 +16,7 @@ This project demonstrates real-time network traffic monitoring and threat detect
 
 ---
 
-## 📡 Simulated Traffic & Detection Scenarios
+## Simulated Traffic & Detection Scenarios
 
 | Simulation | Description |
 |------------|-------------|
@@ -28,7 +28,7 @@ This project demonstrates real-time network traffic monitoring and threat detect
 
 ---
 
-## 📂 Project Contents
+## Project Contents
 
 ```bash
 Network-Traffic-Analysis-Lab-on-Mac-M2-Pro/
