@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates real-time network traffic monitoring and threat detection using [Zeek](https://zeek.org/) on an Ubuntu Server VM, bridged into a live network using UTM on macOS. The goal is to simulate an enterprise-level Security Operations Center (SOC) detection workflow, while building foundational skills for a future career in cybersecurity, cloud security, automation, and AI-based threat detection.
+This project demonstrates real-time network traffic monitoring and threat detection using [Zeek](https://zeek.org/) on an Ubuntu Server VM, bridged into a live network using UTM on macOS. The goal is to simulate an enterprise-level Security Operations Center (SOC) detection workflow.
 
 ---
 
